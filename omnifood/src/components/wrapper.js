@@ -3,6 +3,7 @@ import Header from "@/components/header/header";
 import HeroSection from "@/components/hero-section/hero-section";
 import HowSection from "@/components/how-section/how-section";
 import MealSection from "@/components/meals-section/meals-section";
+import PricingSection from "@/components/pricing-section/pricing-section";
 import TestimonialsSection from "@/components/testimonials-section/testimonials-section";
 
 export default function Wrapper() {
@@ -15,6 +16,7 @@ export default function Wrapper() {
         <HowSection />
         <MealSection />
         <TestimonialsSection />
+        <PricingSection />
       </main>
     </>
   );
