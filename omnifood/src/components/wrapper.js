@@ -1,3 +1,4 @@
+import CTASection from "@/components/cta-section/cta-section";
 import FeaturedSection from "@/components/featured-section/featured-section";
 import Header from "@/components/header/header";
 import HeroSection from "@/components/hero-section/hero-section";
@@ -17,6 +18,7 @@ export default function Wrapper() {
         <MealSection />
         <TestimonialsSection />
         <PricingSection />
+        <CTASection />
       </main>
     </>
   );

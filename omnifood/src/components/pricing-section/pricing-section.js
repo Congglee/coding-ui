@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./pricing-section.module.css";
 
 const features = [
@@ -63,9 +64,9 @@ export default function PricingSection() {
             </li>
           </ul>
           <div className={styles["plan-sing-up"]}>
-            <a href="#" className="btn btn--full">
+            <Link href="#" className="btn btn--full">
               Start eating well
-            </a>
+            </Link>
           </div>
         </div>
         <div
@@ -103,9 +104,9 @@ export default function PricingSection() {
             </li>
           </ul>
           <div className={styles["plan-sing-up"]}>
-            <a href="#" className="btn btn--full">
+            <Link href="#" className="btn btn--full">
               Start eating well
-            </a>
+            </Link>
           </div>
         </div>
       </div>
