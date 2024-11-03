@@ -1,5 +1,4 @@
 import { Rubik } from "next/font/google";
-import Wrapper from "@/components/wrapper";
 import Script from "next/script";
 
 import "@/styles/general.css";
@@ -13,14 +12,20 @@ const rubik = Rubik({
 
 export const metadata = {
   title: "Omnifood",
-  description: "Never cook again - AI-powered meal delivery service",
+  description:
+    "Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs.",
+  manifest: "/manifest.webmanifest",
+  icons: {
+    icon: "/favicon.png",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={rubik.className}>
-        <Wrapper>{children}</Wrapper>
+        {children}
         <Script
           type="module"
           src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

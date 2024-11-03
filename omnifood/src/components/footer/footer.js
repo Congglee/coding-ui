@@ -1,6 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import styles from "./footer.module.css";
 import Logo from "@/components/logo/logo";
+import { useEffect, useState } from "react";
 
 const socialLinks = [
   {
@@ -18,11 +21,17 @@ const socialLinks = [
 ];
 
 export default function Footer() {
+  const [currentYear, setCurrentYear] = useState("");
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear().toString());
+  }, []);
+
   return (
     <footer className={styles.footer}>
       <div className={`container grid ${styles["grid--footer"]}`}>
         <div className={styles["logo-col"]}>
-          <Logo />
+          <Logo className={styles["footer-logo"]} />
           <ul className={styles["social-links"]}>
             {socialLinks.map((link, index) => (
               <li key={index}>
@@ -36,8 +45,8 @@ export default function Footer() {
             ))}
           </ul>
           <p className={styles.copyright}>
-            Copyright © <span className="year">2027</span> by Omnifood, Inc. All
-            rights reserved.
+            Copyright © <span>{currentYear}</span> by Omnifood, Inc. All rights
+            reserved.
           </p>
         </div>
         <div className={styles["address-col"]}>

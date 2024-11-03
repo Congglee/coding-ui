@@ -13,3 +13,13 @@
   padding: 0 4.8rem;
   position: relative;
 }
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  .header {
+    padding: 0 3.2rem;
+  }
+}

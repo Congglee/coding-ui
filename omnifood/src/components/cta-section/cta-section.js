@@ -12,7 +12,7 @@ export default function CTASection() {
               eating well today. You can cancel or pause anytime. And the first
               meal is on us!
             </p>
-            <form className={styles["cta-form"]} name="sign-up" netlify>
+            <form className={styles["cta-form"]} name="sign-up">
               <div>
                 <label htmlFor="full-name">Full Name</label>
                 <input

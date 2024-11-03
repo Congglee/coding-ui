@@ -1,11 +1,27 @@
-import styles from "./page.module.css";
+import Header from "@/components/header/header";
+import HeroSection from "@/components/hero-section/hero-section";
+import FeaturedSection from "@/components/featured-section/featured-section";
+import HowSection from "@/components/how-section/how-section";
+import MealSection from "@/components/meals-section/meals-section";
+import TestimonialsSection from "@/components/testimonials-section/testimonials-section";
+import PricingSection from "@/components/pricing-section/pricing-section";
+import CTASection from "@/components/cta-section/cta-section";
+import Footer from "@/components/footer/footer";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero cumque
-      harum tempore quo dignissimos ratione, unde sit, quam repudiandae dolor
-      porro accusamus numquam sint inventore voluptatem vel asperiores ea sequi.
-    </div>
+    <>
+      <Header />
+      <main>
+        <HeroSection />
+        <FeaturedSection />
+        <HowSection />
+        <MealSection />
+        <TestimonialsSection />
+        <PricingSection />
+        <CTASection />
+      </main>
+      <Footer />
+    </>
   );
 }

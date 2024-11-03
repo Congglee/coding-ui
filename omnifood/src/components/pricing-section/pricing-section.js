@@ -63,7 +63,7 @@ export default function PricingSection() {
               <ion-icon className="list-icon" name="close-outline" />
             </li>
           </ul>
-          <div className={styles["plan-sing-up"]}>
+          <div className={styles["plan-sign-up"]}>
             <Link href="#" className="btn btn--full">
               Start eating well
             </Link>
@@ -103,7 +103,7 @@ export default function PricingSection() {
               <span>Get access to latest recipes</span>
             </li>
           </ul>
-          <div className={styles["plan-sing-up"]}>
+          <div className={styles["plan-sign-up"]}>
             <Link href="#" className="btn btn--full">
               Start eating well
             </Link>

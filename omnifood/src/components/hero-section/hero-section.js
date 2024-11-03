@@ -1,11 +1,14 @@
+"use client";
+
 import Link from "next/link";
 import styles from "./hero-section.module.css";
+import { smoothScroll } from "@/lib/utils";
 
 export default function HeroSection() {
   return (
     <section className={styles["section-hero"]}>
       <div className={styles["hero"]}>
-        <div className="hero-text-box">
+        <div className={styles["hero-text-box"]}>
           <h1 className="heading-primary">
             A healthy meal delivered to your door, every single day
           </h1>
@@ -17,7 +20,11 @@ export default function HeroSection() {
           <Link href="#cta" className="btn btn--full margin-right-sm">
             Start eating well
           </Link>
-          <Link href="#how" className="btn btn--outline">
+          <Link
+            href="#how"
+            className="btn btn--outline"
+            onClick={(e) => smoothScroll(e, "#how")}
+          >
             Learn more ↓
           </Link>
           <div className={styles["delivered-meals"]}>
@@ -34,7 +41,7 @@ export default function HeroSection() {
             </p>
           </div>
         </div>
-        <div className="hero-img-box">
+        <div className={styles["hero-img-box"]}>
           <picture>
             <source srcSet="/hero.webp" type="image/webp" />
             <source srcSet="/hero-min.png" type="image/png" />
