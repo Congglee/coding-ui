@@ -18,11 +18,15 @@
 
 .logos {
   display: flex;
+
+  /* Make the logos evenly spaced */
   justify-content: space-around;
 }
 
 .logos img {
   height: 3.2rem;
+
+  /* Make the images grayscale */
   filter: brightness(0);
   opacity: 50%;
 }
