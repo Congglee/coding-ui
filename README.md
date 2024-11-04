@@ -8,4 +8,4 @@ Welcome to my UI coding collection! This is a collection of different user inter
 
 A modern, responsive restaurant website featuring a clean and intuitive design.
 
-- [View Live Demo](https://omnifood-sigma-ruby.vercel.app)
+- [View Live Demo](https://omnifood-sigma-ruby.vercel.app){:target="\_blank"}
