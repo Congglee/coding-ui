@@ -92,14 +92,3 @@
 .network-image img {
   margin: 0 auto;
 }
-
-.partner {
-  margin-bottom: 50px;
-}
-
-.partner-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0 60px;
-}
