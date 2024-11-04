@@ -3,7 +3,7 @@ import styles from "./subscribe-section.module.css";
 
 export default function SubscribeSection() {
   return (
-    <section className="subscribe">
+    <section className={styles.subscribe}>
       <div className="container">
         <div className={styles["subscribe-container"]}>
           <div className={styles["subscribe-content"]}>

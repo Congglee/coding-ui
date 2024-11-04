@@ -57,13 +57,13 @@ export default function PlanSection() {
               key={index}
             >
               <div className={styles["plan-image"]}>
-                <img srcSet="./images/plan.png 2x" alt />
+                <img srcSet="./images/plan.png 2x" alt="Plan image" />
               </div>
               <h3 className={styles["plan-title"]}>{plan.title}</h3>
               <div className={styles["plan-details"]}>
                 {plan.details.map((detail) => (
-                  <div className={styles["plan-info"]}>
-                    <img src="./images/icon-check-line.svg" alt />
+                  <div className={styles["plan-info"]} key={detail}>
+                    <img src="./images/icon-check-line.svg" alt="Check icon" />
                     <span>{detail}</span>
                   </div>
                 ))}
@@ -89,7 +89,7 @@ export default function PlanSection() {
         </p>
       </div>
       <div className={styles["network-image"]}>
-        <img srcSet="./images/network-image.png 2x" alt />
+        <img srcSet="./images/network-image.png 2x" alt="Network image" />
       </div>
     </section>
   );

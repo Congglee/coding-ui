@@ -15,7 +15,7 @@ export default function PartnerSection() {
         <div className={styles["partner-container"]}>
           {partners.map((partner, index) => (
             <div className="partner-item" key={index}>
-              <img srcSet={partner + " 2x"} alt />
+              <img srcSet={partner + " 2x"} alt="Partner logo" />
             </div>
           ))}
         </div>

@@ -7,7 +7,7 @@ export default function IntroSection() {
         <div className={styles["intro-container"]}>
           <div className={styles["intro-item"]}>
             <div className={styles["intro-icon"]}>
-              <img srcSet="./images/user.png 2x" alt />
+              <img srcSet="./images/user.png 2x" alt="User icon" />
             </div>
             <div className={styles["intro-info"]}>
               <h3 className={styles["intro-title"]}>90+</h3>
@@ -16,7 +16,7 @@ export default function IntroSection() {
           </div>
           <div className={styles["intro-item"]}>
             <div className={styles["intro-icon"]}>
-              <img srcSet="./images/location.png 2x" alt />
+              <img srcSet="./images/location.png 2x" alt="Location icon" />
             </div>
             <div className={styles["intro-info"]}>
               <h3 className={styles["intro-title"]}>30+</h3>
@@ -25,7 +25,7 @@ export default function IntroSection() {
           </div>
           <div className={styles["intro-item"]}>
             <div className={styles["intro-icon"]}>
-              <img srcSet="./images/server.png 2x" alt />
+              <img srcSet="./images/server.png 2x" alt="Server icon" />
             </div>
             <div className={styles["intro-info"]}>
               <h3 className={styles["intro-title"]}>50+</h3>

@@ -11,3 +11,9 @@
 .subscribe-content {
   max-width: 370px;
 }
+
+@media screen and (min-width: 1024px) {
+  .subscribe {
+    transform: translateY(50%);
+  }
+}

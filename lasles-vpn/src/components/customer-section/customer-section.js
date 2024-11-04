@@ -103,7 +103,10 @@ export default function CustomerSection() {
                     <div className={styles["customer-top"]}>
                       <div className={styles["customer-info"]}>
                         <div className={styles["customer-avatar"]}>
-                          <img srcSet="./images/avatar.png 2x" alt="" />
+                          <img
+                            srcSet="./images/avatar.png 2x"
+                            alt={customer.name}
+                          />
                         </div>
                         <div className={styles["customer-content"]}>
                           <h3

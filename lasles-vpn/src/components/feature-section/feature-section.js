@@ -25,7 +25,7 @@ export default function FeatureSection() {
       <div className="container">
         <div className={styles["feature-container"]}>
           <div className={styles["feature-image"]}>
-            <img src="./images/feature-image.png" alt />
+            <img src="./images/feature-image.png" alt="Feature image" />
           </div>
           <div className={styles["feature-content"]}>
             <h2 className="heading">We Provide Many Features You Can Use</h2>
@@ -38,7 +38,7 @@ export default function FeatureSection() {
                 <li className={styles["feature-item"]} key={index}>
                   <img
                     src={feature.icon}
-                    alt
+                    alt="Feature icon"
                     className={styles["feature-icon"]}
                   />
                   <span>{feature.text}</span>

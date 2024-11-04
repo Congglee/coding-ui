@@ -20,7 +20,7 @@ export default function HeroSection() {
             </Link>
           </div>
           <div className={styles["hero-image"]}>
-            <img srcSet="./images/hero-image.png 2x" alt />
+            <img srcSet="./images/hero-image.png 2x" alt="Hero image" />
           </div>
         </div>
       </div>

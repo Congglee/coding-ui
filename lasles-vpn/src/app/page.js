@@ -1,5 +1,6 @@
 import CustomerSection from "@/components/customer-section/customer-section";
 import FeatureSection from "@/components/feature-section/feature-section";
+import Footer from "@/components/footer/footer";
 import HeroSection from "@/components/hero-section/hero-section";
 import IntroSection from "@/components/intro-section/intro-section";
 import PartnerSection from "@/components/partner-section/partner-section";
@@ -16,6 +17,7 @@ export default function Home() {
       <PartnerSection />
       <CustomerSection />
       <SubscribeSection />
+      <Footer />
     </>
   );
 }
