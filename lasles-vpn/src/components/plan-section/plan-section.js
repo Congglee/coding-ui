@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./plan-section.module.css";
 
 const plans = [
@@ -71,9 +72,9 @@ export default function PlanSection() {
                 {plan.price}
                 <span>{plan.price === "Free" ? "" : " / mo"}</span>
               </h4>
-              <a href="#" className="button button--primary button--shadow">
+              <Link href="#" className="button button--primary button--shadow">
                 Select
-              </a>
+              </Link>
             </div>
           ))}
         </div>

@@ -4,6 +4,7 @@ import HeroSection from "@/components/hero-section/hero-section";
 import IntroSection from "@/components/intro-section/intro-section";
 import PartnerSection from "@/components/partner-section/partner-section";
 import PlanSection from "@/components/plan-section/plan-section";
+import SubscribeSection from "@/components/subscribe-section/subscribe-section";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <PlanSection />
       <PartnerSection />
       <CustomerSection />
+      <SubscribeSection />
     </>
   );
 }

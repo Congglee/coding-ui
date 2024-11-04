@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./hero-section.module.css";
 
 export default function HeroSection() {
@@ -14,9 +15,9 @@ export default function HeroSection() {
               <span className="text-medium">LaslesVPN</span> discover
               interesting features from us.
             </p>
-            <a href="#" className="button button--rounded button--primary">
+            <Link href="#" className="button button--rounded button--primary">
               Get Started
-            </a>
+            </Link>
           </div>
           <div className={styles["hero-image"]}>
             <img srcSet="./images/hero-image.png 2x" alt />
