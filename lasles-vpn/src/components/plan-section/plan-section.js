@@ -53,6 +53,7 @@ export default function PlanSection() {
               className={`${styles["plan-item"]} ${
                 index === 0 ? styles["is-active"] : ""
               }`}
+              key={index}
             >
               <div className={styles["plan-image"]}>
                 <img srcSet="./images/plan.png 2x" alt />
