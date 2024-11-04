@@ -1,0 +1,26 @@
+.feature {
+  padding-bottom: 130px;
+}
+
+.feature-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 0 170px;
+}
+
+.feature-desc {
+  margin-bottom: 23px;
+}
+
+.feature-list {
+  list-style: none;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  margin-bottom: 21px;
+  font-size: 14px;
+}
