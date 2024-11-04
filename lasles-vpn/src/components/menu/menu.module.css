@@ -1,0 +1,69 @@
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+}
+
+.menu-link {
+  color: inherit;
+}
+
+.menu-toggle {
+  display: none;
+  width: 30px;
+  height: 20px;
+}
+
+.menu-toggle span {
+  pointer-events: none;
+  width: 100%;
+  height: 3px;
+  background-color: var(--heading-color);
+  display: block;
+}
+
+/* 
+  1. Media is not only for Responsive
+    - `@media` is not just limited to checking screen size
+    - It can check many other features of the device
+
+  2. `hover` is a Media Feature
+    - Check if the device supports hover state
+    - `hover` means the device has an accurate mouse pointer (like PC)
+    - `none` means the device doesn't support hover (like phones)
+
+  3. Why check hover?
+    - On mobile/tablet devices: there is no real hover
+    - On PC: users can hover the mouse
+    - Helps optimize user experience for each device type
+*/
+
+@media (hover: hover) {
+  .menu-link {
+    position: relative;
+    transition: all 0.2s linear;
+  }
+
+  .menu-link::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: auto;
+    right: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--primary-color);
+    transition: all 0.2s linear;
+  }
+
+  .menu-link:hover {
+    color: var(--primary-color);
+  }
+
+  .menu-link:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+}
