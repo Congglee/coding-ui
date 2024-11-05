@@ -20,11 +20,6 @@
   font-size: 20px;
 }
 
-.intro-item:nth-child(2) {
-  border-left: solid 2px #eeeff2;
-  border-right: solid 2px #eeeff2;
-}
-
 .intro-title {
   font-size: 25px;
   margin-bottom: 5px;
@@ -33,4 +28,29 @@
 
 .intro-text {
   line-height: calc(30 / 20);
+}
+
+@media screen and (min-width: 768px) {
+  .intro-item:nth-child(2) {
+    border-left: solid 2px #eeeff2;
+    border-right: solid 2px #eeeff2;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .intro {
+    margin-bottom: 50px;
+  }
+
+  .intro-container {
+    grid-template-columns: 100%;
+    padding: 30px;
+    gap: 50px 0;
+  }
+
+  .intro-item {
+    flex-direction: column;
+    gap: 20px 0;
+    text-align: center;
+  }
 }

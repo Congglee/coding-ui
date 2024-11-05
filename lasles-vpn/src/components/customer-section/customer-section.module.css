@@ -138,6 +138,18 @@
   .embla__slide {
     flex: 0 0 calc(100% / 2);
   }
+
+  .embla__controls {
+    grid-template-columns: 1fr;
+  }
+
+  .embla__buttons {
+    display: none;
+  }
+
+  .embla__dots {
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 767px) {

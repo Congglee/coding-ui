@@ -8,9 +8,11 @@ const rubik = Rubik({
 });
 
 export const metadata = {
-  title: "LaslesVPN",
+  title: "Lasles VPN",
   description:
     "LaslesVPN is a fast, secure, and reliable VPN service that protects your privacy online.",
+  manifest: "/manifest.webmanifest",
+  icons: { icon: "/favicon.svg" },
 };
 
 export default function RootLayout({ children }) {
