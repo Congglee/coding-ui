@@ -1,0 +1,113 @@
+/**************************/
+/* FOOTER */
+/**************************/
+
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.gridFooter {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logoCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerLogo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.socialLinks {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.footerLink:link,
+.footerLink:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footerLink:hover,
+.footerLink:active {
+  color: #555;
+}
+
+.socialIcon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
+}
+
+.footerHeading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footerNav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .gridFooter {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .logoCol,
+  .addressCol {
+    grid-column: span 3;
+  }
+
+  .navCol {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+}
+
+/**************************/
+/* Fixing Safari flexbox gap */
+/**************************/
+
+.noFlexGap .footerRow div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.noFlexGap .footerNav div:last-child {
+  margin-bottom: 2.4rem;
+}
+
+.noFlexGap .socialLinks li:not(:last-child) {
+  margin-right: 2.4rem;
+}
