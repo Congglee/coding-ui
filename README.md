@@ -8,7 +8,7 @@ Welcome to my UI coding collection! This repository showcases various user inter
 
 A modern, responsive restaurant website featuring a clean and intuitive design.
 
-[![View Live Demo](https://img.shields.io/badge/View_Live-Demo-blue?style=for-the-badge)](https://omnifood-sigma-ruby.vercel.app)
+[![View Live Demo](https://img.shields.io/badge/View_Live-Demo-blue?style=for-the-badge)](https://omnifood-khaki-delta.vercel.app)
 
 ### 🔒 LaslesVPN
 
