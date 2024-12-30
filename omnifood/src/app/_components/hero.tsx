@@ -9,7 +9,7 @@ export default function Hero() {
     <section className={styles.sectionHero}>
       <div className={styles.hero}>
         <div className={styles.heroTextBox}>
-          <h1 className={styles.headingPrimary}>
+          <h1 className="heading-primary">
             A healthy meal delivered to your door, every single day
           </h1>
           <p className={styles.heroDescription}>
