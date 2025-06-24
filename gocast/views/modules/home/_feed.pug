@@ -1,0 +1,62 @@
+-
+  var feedItems = [
+    {
+      author_avatar: "./images/img-host-user-6.png",
+      author_name: "James Killened",
+      author_action: "rating",
+      feed_image: "./images/img-feed-1.png",
+      feed_perspective: "Perspective Podcast (Ep. 1)",
+      feed_title: "Philosophy vs Religion vs Science: Yahia Amin and Sadman Sadik",
+      feed_date: "11 dayes ago",
+      feed_time: "11 dayes ago",
+      feed_duration: "45mins 10 Sec",
+      feed_desc: "Play Philosophy vs Religion vs Science: Perspective Podcast (Ep. 1) | Yahia Amin and Sadman Sadik by PERSPECTIVE with Yahia Amin on desktop and mobile. Play over 265 million tracks for...",
+    },
+    {
+      author_avatar: "./images/img-host-user-1.png",
+      author_name: "Thomas L. Fletcher",
+      author_action: "release",
+      feed_image: "./images/img-feed-2.png",
+      feed_perspective: "How To & Tips",
+      feed_title: "UX Design Process: Mental Modeling Framework, How To & Tips",
+      feed_date: "Jun 25th",
+      feed_time: "11 dayes ago",
+      feed_duration: "45mins 10 Sec",
+      feed_desc: "Nicole is a User Experience Designer passionate about technology startups, cars, education & music. Based in Los Angeles CA., she is a User Experience Designer @ Iconmobile, an award-winning mobile",
+    },
+    {
+      author_avatar: "./images/img-host-user-6.png",
+      author_name: "James Killened",
+      author_action: "rating",
+      feed_image: "./images/img-feed-3.png",
+      feed_perspective: "Perspective Podcast (Ep. 1)",
+      feed_title: "I CAN'T DO THIS | Islam and Mental Health | Full Podcast",
+      feed_date: "Jun 25th",
+      feed_time: "11 dayes ago",
+      feed_duration: "45mins 10 Sec",
+      feed_desc: "The relationship between mental health and faith is a topic that has long been riddled with confusion, debate, and much misconception.",
+    }
+  ]
+
+.feed
+  .feed-header
+    .feed-tab
+      each tab, index in ["My Feed", "Poplar Feed", "Recent"]
+        .feed-tab-item(class=`${index === 0 ? "is-active" : ""}`)= tab
+    .feed-toggle
+      +toggle
+      p New Releases &amp; Guests Only
+  .feed-main
+    each item in feedItems
+      +feedItem(
+        item.author_avatar,
+        item.author_name,
+        item.author_action,
+        item.feed_image,
+        item.feed_perspective,
+        item.feed_title,
+        item.feed_date,
+        item.feed_time,
+        item.feed_duration,
+        item.feed_desc
+      )

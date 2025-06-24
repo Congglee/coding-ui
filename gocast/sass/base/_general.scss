@@ -1,0 +1,48 @@
+@use "../abstracts" as abst;
+
+.heading {
+  --mb: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  @include abst.fw("semibold");
+  margin-bottom: var(--mb);
+}
+
+.widget {
+  margin-bottom: 40px;
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &-heading {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  &-view-all {
+    font-size: 13px;
+    color: abst.$gray2;
+  }
+}
+
+.page-header {
+  margin-bottom: 20px;
+
+  &-heading {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.08;
+  }
+
+  &-desc {
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.43;
+    color: #a6a7b2;
+  }
+}

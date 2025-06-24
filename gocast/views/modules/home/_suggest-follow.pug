@@ -1,0 +1,5 @@
+.widget.widget-follow
+  +widgetHeader("Suggested Follows", "#")
+  .follow-list
+    each val in [{avatar: "./images/suggest-follow-1.png", name: "Yahia Amin", username: "@yahiaamin"}, {avatar: "./images/suggest-follow-2.png", name: "Mufti Menk", username: "@muftimenk"}, {avatar: "./images/suggest-follow-3.png", name: "Omar Suleiman", username: "@omarsuleiman"}, {avatar: "./images/suggest-follow-2.png", name: "Nouman Ali Khan", username: "@noumanalikhan"}]
+      +followItem(val.avatar, val.name, val.username) 

@@ -1,0 +1,109 @@
+:root {
+  --bg-body-color: #fff;
+  --sidebar-line: #e9eef4;
+  --search-bg: #f0f3f6;
+  --menu-text: #8494ab;
+  --menu-heading: #8494ab;
+  --global-text: #1b1d21;
+  --trending-bg: #f8f8f8;
+  --host-name: #5f6164;
+  --page-header-heading: #1b1d21;
+}
+
+body {
+  color: var(--global-text);
+}
+
+body,
+.sidebar,
+.topbar {
+  background-color: var(--bg-body-color);
+}
+
+.sidebar {
+  border-right: 1px solid var(--sidebar-line);
+}
+
+.menu {
+  &-heading {
+    color: var(--menu-heading);
+  }
+
+  &-link {
+    color: var(--menu-text);
+  }
+
+  &:not(:last-child)::after {
+    background-color: var(--sidebar-line);
+  }
+}
+
+.search {
+  background-color: var(--search-bg);
+}
+
+.page-header {
+  &-heading {
+    color: var(--page-header-heading);
+  }
+}
+
+.trending {
+  &-banner {
+    background-color: var(--trending-bg);
+  }
+}
+
+.host {
+  &-name {
+    color: var(--host-name);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-body-color: #242731;
+    --sidebar-line: #373a43;
+    --search-bg: #373a43;
+    --menu-text: #ababad;
+    --menu-heading: #5f6164;
+    --global-text: #fff;
+    --page-header-heading: #fff;
+    --trending-bg: #050f16;
+    --host-name: #e4e4e4;
+
+    --trending-podcast: #a6a7b2;
+    --trending-author: #fff;
+    --feed-border: #373a43;
+    --toggle-text: #fff;
+    --logo-color: #fff;
+    --icon-path: #676a6f;
+    --navigation-bg: #242731;
+    --playlist-bg: #242731;
+    --playlist-shadow: -10px 24px 35px 0px rgba(8, 8, 9, 0.25),
+      -1px -3px 14px 0px rgba(15, 20, 39, 0.2);
+    --playlist-title: #fff;
+    --playlist-date: #a6a7b2;
+    --playlist-episode-border: #242731;
+    --playlist-episode-number: #373a43;
+  }
+}
+
+html.dark {
+  --bg-body-color: #242731;
+  --sidebar-line: #373a43;
+  --search-bg: #373a43;
+  --menu-text: #ababad;
+  --global-text: #fff;
+  --trending-bg: #050f16;
+  --host-name: #e4e4e4;
+
+  --trending-podcast: #a6a7b2;
+  --trending-author: #fff;
+  --feed-border: #373a43;
+  --toggle-text: #fff;
+  --logo-color: #fff;
+  --icon-path: #676a6f;
+  --navigation-bg: #242731;
+  --page-header-heading: #fff;
+}

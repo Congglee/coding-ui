@@ -1,0 +1,16 @@
+extends ./views/layouts/_dashboard
+append stylesheet
+  link(rel="stylesheet", href="./styles/home.css")
+block title
+  title GoCast UI - Home
+block main
+  .home-wrapper
+    .home-left
+      include ./views/modules/home/_popular-host
+      include ./views/modules/home/_trending
+      include ./views/modules/home/_feed
+    .home-right
+      include ./views/modules/home/_top-podcast
+      include ./views/modules/home/_suggest-follow
+      include ./views/modules/home/_listening-history
+      include ./views/modules/home/_topics

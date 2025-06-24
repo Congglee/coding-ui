@@ -1,0 +1,78 @@
+extends ./views/layouts/_dashboard
+
+append stylesheet
+  link(rel="stylesheet", href="./styles/playlist.css")
+block title
+  title GoCastUI - Playlist
+block main
+  - 
+    var playlistItems = [
+      {
+        image: "./images/playlist-1.png",
+        title: "UIHUT Podcsat",
+        date: "Created on 1 day ago",
+        episodes: 41,
+        likes: 1.5,
+        desc: "UIHUT is a design and coding resources platform for designers, developers, and entrepreneurs.",
+      },
+      {
+        image: "./images/playlist-2.png",
+        title: "Developer Podcast",
+        date: "Created on 1 day ago",
+        episodes: 41,
+        likes: 1.5,
+        desc: "The Best Tech Podcasts for Software Developers in 2021.",
+      },
+      {
+        image: "./images/playlist-3.png",
+        title: "Learning Podcast",
+        date: "Created on 1 day ago",
+        episodes: 41,
+        likes: 1.5,
+        desc: "The 30 best educational podcasts for learning what you missed in school.",
+      },
+      {
+        image: "./images/playlist-4.png",
+        title: "Health & Fitness",
+        date: "Created on 1 day ago",
+        episodes: 41,
+        likes: 1.5,
+        desc: "UIHUT is a design and coding resources platform for designers, developers, and entrepreneurs.",
+      },
+      {
+        image: "./images/playlist-5.png",
+        title: "Sports",
+        date: "Created on 1 day ago",
+        episodes: 41,
+        likes: 1.5,
+        desc: "Also, it helps us to learn many new things in life. It assists us in building confidence, develops.",
+      },
+      {
+        image: "./images/playlist-6.png",
+        title: "Motivational Speech",
+        date: "Created on 1 day ago",
+        episodes: 41,
+        likes: 1.5,
+        desc: "A motivational speech is a public speech intended to inspire an audience to make a change in their lives.",
+      },
+      {
+        image: "./images/playlist-7.png",
+        title: "Business Development",
+        date: "Created on 1 day ago",
+        episodes: 41,
+        likes: 1.5,
+        desc: "UIHUT is a design and coding resources platform for designers, developers, and entrepreneurs.",
+      },
+      {
+        image: "./images/playlist-8.png",
+        title: "UIHUT Podcsat",
+        date: "Created on 1 day ago",
+        episodes: 41,
+        likes: 1.5,
+        desc: "UIHUT is a design and coding resources platform for designers, developers, and entrepreneurs.",
+      },
+    ]
+  +pageHeader("Playlist", "Hear your own playlists and the playlists you've liked")
+  .playlist
+    each val in playlistItems
+      +playlistItem(val.image, val.title, val.date, val.episodes, val.likes, val.desc)    
