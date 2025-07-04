@@ -1,0 +1,38 @@
+include ./mixins/footer-mixins.pug
+
+footer.footer
+  .container
+    .footer-top
+      .footer-column
+        +logo
+      .footer-column
+        h3.footer-heading Company
+        ul.footer-links
+          each link in ["About", "Work", "Careers", "Pricing", "Blog"]
+            li.footer-link-item
+              a.footer-link.text--xsmall(href="#")= link
+      .footer-column
+        h3.footer-heading Services
+        ul.footer-links 
+          each link in ["Branding", "Websites", "Development", "Strategy", "Platforms"] 
+            li.footer-link-item
+              a.footer-link.text--xsmall(href="#")= link
+      .footer-column
+        h3.footer-heading Contact
+        ul.footer-links   
+          each link in ["Help Desk", "Docs", "Open a Ticket", "Chat", "Forum"]
+            li.footer-link-item
+              a.footer-link.text--xsmall(href="#")= link
+      .footer-column 
+        h3.footer-heading Newsletter
+        p.newsletter-desc.text--small Subscribe to our newsletter to keep up to date on our marketing, website, design services, and tips.
+        form.newsletter-form(action="#")
+          input.newsletter-input(type="email" placeholder="Enter your email")
+          button.button.newsletter-button(type="submit") Subscribe 
+        p.newsletter-warning.text--small We hate spam as much as you do. We will never, ever send you such emails. 
+    .footer-bottom
+      p.text-small © 2022 Pollock LLC. All Rights Reserved. Terms & Conditions. Privacy Policy.
+      .footer-social
+        each social in ["./images/icon-fb.svg", "./images/icon-twitter.svg", "./images/icon-linkedin.svg"]
+          .footer-social-item
+            img(src=social, alt="social")

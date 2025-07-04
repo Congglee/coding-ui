@@ -1,0 +1,19 @@
+mixin aboutSection(section)
+  .about-section
+    .about-section-image
+      img(srcSet=section.image, alt="about")
+    .about-section-content
+      h3.heading.about-section-heading= section.heading
+      p.text!= section.content
+      if section.has_list
+        +aboutItemsList()
+      a.button.button--primary.about-section-button(href="#") Discover Now
+
+mixin aboutItemsList()
+  .about-items
+    each item in [{icon: "./images/icon-design.svg", title: "Design & Development Systems", desc: "Chat, start meetings or join them with a click from within your conversation."}, {icon: "./images/icon-chart2.svg", title: "Digital Growth Strategy", desc: "Chat, start meetings or join them with a click from within your conversation."}, {icon: "./images/icon-user.svg", title: "User Journey Mapping", desc: "Chat, start meetings or join them with a click from within your conversation."}]
+      .about-item
+        img(src=item.icon, alt="design")
+        .about-item-content
+          h4.about-item-title.heading= item.title
+          p.about-item-desc= item.desc 

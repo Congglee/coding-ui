@@ -1,0 +1,11 @@
+section.services#services
+  .container
+    h2.services-heading.heading.heading--bigger We design engaging digital products used by millions of people
+    p.services-caption We team up with marketing departments of large companies and startups to deliver award‑winning websites
+    ul.services-list
+      each val in [{title: "Branding", icon: "./images/icon-rocket.svg"}, {title: "Development", icon: "./images/icon-layers.svg"}, {title: "Strategy", icon: "./images/icon-chart.svg"}]
+        li.services-item
+          img.services-image(src=val.icon, alt="service")
+          h3.services-title= val.title
+          p.services-description We design digital platforms to empower users and your brand's tribe.
+    a.services-link(href="#").button View Our Services 

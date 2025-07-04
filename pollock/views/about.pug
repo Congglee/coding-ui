@@ -1,0 +1,10 @@
+include ./data/about-data.pug
+include ./mixins/about-mixins.pug
+
+section.about 
+  .container 
+    h2.heading.heading--big.about-heading Digital products that people love to use
+    p.about-caption.text Applying behavioral science to customer experience
+    .about-sections
+      each section in aboutSections
+        +aboutSection(section) 
