@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "DM Sans", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.boxed {
+  width: 300px;
+  height: 200px;
+  overflow-y: auto;
+}
+
+/* Scrollbar width */
+.boxed::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Scrollbar track */
+.boxed::-webkit-scrollbar-track {
+  background-color: crimson;
+}
+
+/* Scrollbar thumb */
+.boxed::-webkit-scrollbar-thumb {
+  background-color: #07a787;
+}

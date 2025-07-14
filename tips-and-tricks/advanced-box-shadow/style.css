@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.square {
+  width: 5rem;
+  height: 5rem;
+  margin: 5rem;
+  background-color: plum;
+  box-shadow: 6rem 0 0 green, 12rem 0 0 red, 0 6rem 0 violet, 6rem 6rem 0 lightblue, 12rem 6rem 0 lightsalmon, 0 12rem 0 palegreen, 6rem 12rem 0 firebrick, 12rem 12rem 0 khaki;
+}
+
+.circle {
+  width: 8rem;
+  height: 8rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: orange;
+  box-shadow: 4rem 0 0 red;
+}
+
+/*# sourceMappingURL=style.css.map */

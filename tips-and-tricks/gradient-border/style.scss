@@ -1,0 +1,80 @@
+$primary: #fa4c53;
+$secondary: #fd9c84;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  background-color: #131933;
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+.boxed {
+  @include size(10rem, 4rem);
+  margin: 5rem;
+
+  // Method 1: does not support border-radius.
+  // border-image-source: linear-gradient(to right, $primary, $secondary);
+  // border-image-slice: 1;
+  // border-radius: 10rem;
+
+  // Method 2:
+  // box-shadow: -2px -2px 0 2px $primary, 0 0 0 4px $secondary;
+  // border-radius: 10rem;
+
+  // Method 3:
+  background-image: linear-gradient(to right, $primary, $secondary);
+  border-radius: 10rem;
+  padding: 10px;
+
+  &-child {
+    width: 100%;
+    height: 100%;
+    background-color: #131933;
+    border-radius: inherit;
+  }
+}

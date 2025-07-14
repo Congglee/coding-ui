@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.card {
+  --card-image-height: 200px;
+  --card-content-padding: 20px;
+  --card-title-color: #1a1a1a;
+  width: 300px;
+  margin: 25px auto;
+  border: solid 1px #ccc;
+
+  &-image {
+    height: var(--card-image-height);
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &-content {
+    padding: var(--card-content-padding);
+  }
+
+  &-title {
+    color: var(--card-title-color);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    --card-image-height: 150px;
+    --card-content-padding: 15px;
+    --card-title-color: red;
+  }
+}

@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  line-height: 1.5;
+  background-color: white;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  height: 600px;
+  position: relative;
+
+  &::before {
+    content: "";
+    @include size(100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right bottom, #07047e, #1a3bda);
+    transform: skewY(-5deg) translateY(-5rem);
+    z-index: -1;
+  }
+}
