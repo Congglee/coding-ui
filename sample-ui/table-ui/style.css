@@ -1,0 +1,176 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+table {
+  width: 100%;
+}
+table th {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+table td,
+table th {
+  text-align: center;
+  padding: 2rem;
+  color: #9c84a9;
+  font-size: 1.5rem;
+}
+table thead tr {
+  border-bottom: solid 1px #ccc;
+}
+table .checkbox__input {
+  display: none;
+}
+table .checkbox__input:checked + .checkbox__label::after {
+  opacity: 1;
+  visibility: visible;
+}
+table .checkbox__label {
+  cursor: pointer;
+  position: relative;
+}
+table .checkbox__label::before {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  border-radius: 5px;
+  background-color: #ccc;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+table .checkbox__label::after {
+  content: "";
+  width: 1rem;
+  height: 0.5rem;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  border-bottom: solid 2.5px #fff;
+  border-left: solid 2.5px #fff;
+  transition: 0.25s linear;
+  opacity: 0;
+  visibility: hidden;
+}
+table .desc {
+  white-space: nowrap;
+  max-width: 15rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+table .toggle__input {
+  display: none;
+}
+table .toggle__input:checked + .toggle__label {
+  background-color: #00aefd;
+}
+table .toggle__input:checked + .toggle__label::before {
+  background-color: #00aefd;
+  transform: translate(3rem, -50%);
+}
+table .toggle__label {
+  width: 5rem;
+  height: 5px;
+  border-radius: 1rem;
+  background-color: #ccc;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.25s linear;
+}
+table .toggle__label::before {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  background-color: #ccc;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  transition: all 0.25s linear;
+}
+table .status {
+  padding: 1rem 3rem;
+  display: inline-block;
+  border-radius: 2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+table .status--active {
+  color: green;
+  background-color: rgba(0, 128, 0, 0.2);
+}
+table .action {
+  display: flex;
+}
+table .action__icon {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 1279px) {
+  .table {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .table::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

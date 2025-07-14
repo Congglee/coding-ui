@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table UI</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th>
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  id="checkbox__input"
+                  class="checkbox__input"
+                  disabled
+                />
+                <label for="" class="checkbox__label"></label>
+              </div>
+            </th>
+            <th>Tipo</th>
+            <th>Cordio</th>
+            <th>Description</th>
+            <th>Marca</th>
+            <th>Client</th>
+            <th>Active</th>
+            <th>Cardio</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  name="1"
+                  class="checkbox__input"
+                  id="checkbox__input--first"
+                />
+                <label
+                  for="checkbox__input--first"
+                  class="checkbox__label"
+                ></label>
+              </div>
+            </td>
+            <td><i class="fa fa-truck"></i></td>
+            <td>PR-005</td>
+            <td>
+              <p class="desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
+                excepturi exercitationem voluptatum quibusdam laudantium eveniet
+                dolorem fugiat ipsum vero sunt quo, esse ducimus, animi
+                blanditiis incidunt soluta tempora quod sapiente?
+              </p>
+            </td>
+            <td>HP</td>
+            <td>
+              <div class="toggle">
+                <input
+                  type="checkbox"
+                  name="client1"
+                  id="toggle__client--first"
+                  class="toggle__input"
+                />
+                <label
+                  for="toggle__client--first"
+                  class="toggle__label"
+                ></label>
+              </div>
+            </td>
+            <td>
+              <div class="toggle">
+                <input
+                  type="checkbox"
+                  name="active1"
+                  id="toggle__active--first"
+                  class="toggle__input"
+                />
+                <label
+                  for="toggle__active--first"
+                  class="toggle__label"
+                ></label>
+              </div>
+            </td>
+            <td><span class="status status--active">Active</span></td>
+            <td>
+              <div class="action">
+                <t class="fa fa-edit action__icon"></t>
+                <t class="fa fa-circle action__icon"></t>
+                <t class="fa fa-trash action__icon"></t>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  name="2"
+                  class="checkbox__input"
+                  id="checkbox__input--second"
+                />
+                <label
+                  for="checkbox__input--second"
+                  class="checkbox__label"
+                ></label>
+              </div>
+            </td>
+            <td><i class="fa fa-truck"></i></td>
+            <td>PR-006</td>
+            <td>
+              <p class="desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
+                excepturi exercitationem voluptatum quibusdam laudantium eveniet
+                dolorem fugiat ipsum vero sunt quo, esse ducimus, animi
+                blanditiis incidunt soluta tempora quod sapiente?
+              </p>
+            </td>
+            <td>HP</td>
+            <td>
+              <div class="toggle">
+                <input
+                  type="checkbox"
+                  name="client2"
+                  id="toggle__client--second"
+                  class="toggle__input"
+                />
+                <label
+                  for="toggle__client--second"
+                  class="toggle__label"
+                ></label>
+              </div>
+            </td>
+            <td>
+              <div class="toggle">
+                <input
+                  type="checkbox"
+                  name="active2"
+                  id="toggle__active--second"
+                  class="toggle__input"
+                />
+                <label
+                  for="toggle__active--second"
+                  class="toggle__label"
+                ></label>
+              </div>
+            </td>
+            <td><span class="status status--active">Active</span></td>
+            <td>
+              <div class="action">
+                <t class="fa fa-edit action__icon"></t>
+                <t class="fa fa-circle action__icon"></t>
+                <t class="fa fa-trash action__icon"></t>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  name="3"
+                  class="checkbox__input"
+                  id="checkbox__input--third"
+                />
+                <label
+                  for="checkbox__input--third"
+                  class="checkbox__label"
+                ></label>
+              </div>
+            </td>
+            <td><i class="fa fa-truck"></i></td>
+            <td>PR-007</td>
+            <td>
+              <p class="desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
+                excepturi exercitationem voluptatum quibusdam laudantium eveniet
+                dolorem fugiat ipsum vero sunt quo, esse ducimus, animi
+                blanditiis incidunt soluta tempora quod sapiente?
+              </p>
+            </td>
+            <td>HP</td>
+            <td>
+              <div class="toggle">
+                <input
+                  type="checkbox"
+                  name="client3"
+                  id="toggle__client--third"
+                  class="toggle__input"
+                />
+                <label
+                  for="toggle__client--third"
+                  class="toggle__label"
+                ></label>
+              </div>
+            </td>
+            <td>
+              <div class="toggle">
+                <input
+                  type="checkbox"
+                  name="active3"
+                  id="toggle__active--third"
+                  class="toggle__input"
+                />
+                <label
+                  for="toggle__active--third"
+                  class="toggle__label"
+                ></label>
+              </div>
+            </td>
+            <td><span class="status status--active">Active</span></td>
+            <td>
+              <div class="action">
+                <t class="fa fa-edit action__icon"></t>
+                <t class="fa fa-circle action__icon"></t>
+                <t class="fa fa-trash action__icon"></t>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  name="4"
+                  class="checkbox__input"
+                  id="checkbox__input--fouth"
+                />
+                <label
+                  for="checkbox__input--fouth"
+                  class="checkbox__label"
+                ></label>
+              </div>
+            </td>
+            <td><i class="fa fa-truck"></i></td>
+            <td>PR-008</td>
+            <td>
+              <p class="desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
+                excepturi exercitationem voluptatum quibusdam laudantium eveniet
+                dolorem fugiat ipsum vero sunt quo, esse ducimus, animi
+                blanditiis incidunt soluta tempora quod sapiente?
+              </p>
+            </td>
+            <td>HP</td>
+            <td>
+              <div class="toggle">
+                <input
+                  type="checkbox"
+                  name="client4"
+                  id="toggle__client--fouth"
+                  class="toggle__input"
+                />
+                <label
+                  for="toggle__client--fouth"
+                  class="toggle__label"
+                ></label>
+              </div>
+            </td>
+            <td>
+              <div class="toggle">
+                <input
+                  type="checkbox"
+                  name="active4"
+                  id="toggle__active--fouth"
+                  class="toggle__input"
+                />
+                <label
+                  for="toggle__active--fouth"
+                  class="toggle__label"
+                ></label>
+              </div>
+            </td>
+            <td><span class="status status--active">Active</span></td>
+            <td>
+              <div class="action">
+                <t class="fa fa-edit action__icon"></t>
+                <t class="fa fa-circle action__icon"></t>
+                <t class="fa fa-trash action__icon"></t>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  name="5"
+                  class="checkbox__input"
+                  id="checkbox__input--fifth"
+                />
+                <label
+                  for="checkbox__input--fifth"
+                  class="checkbox__label"
+                ></label>
+              </div>
+            </td>
+            <td><i class="fa fa-truck"></i></td>
+            <td>PR-009</td>
+            <td>
+              <p class="desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
+                excepturi exercitationem voluptatum quibusdam laudantium eveniet
+                dolorem fugiat ipsum vero sunt quo, esse ducimus, animi
+                blanditiis incidunt soluta tempora quod sapiente?
+              </p>
+            </td>
+            <td>HP</td>
+            <td>
+              <div class="toggle">
+                <input
+                  type="checkbox"
+                  name="client5"
+                  id="toggle__client--fifth"
+                  class="toggle__input"
+                />
+                <label
+                  for="toggle__client--fifth"
+                  class="toggle__label"
+                ></label>
+              </div>
+            </td>
+            <td>
+              <div class="toggle">
+                <input
+                  type="checkbox"
+                  name="active5"
+                  id="toggle__active--fifth"
+                  class="toggle__input"
+                />
+                <label
+                  for="toggle__active--fifth"
+                  class="toggle__label"
+                ></label>
+              </div>
+            </td>
+            <td><span class="status status--active">Active</span></td>
+            <td>
+              <div class="action">
+                <t class="fa fa-edit action__icon"></t>
+                <t class="fa fa-circle action__icon"></t>
+                <t class="fa fa-trash action__icon"></t>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  name="6"
+                  class="checkbox__input"
+                  id="checkbox__input--sixth"
+                />
+                <label
+                  for="checkbox__input--sixth"
+                  class="checkbox__label"
+                ></label>
+              </div>
+            </td>
+            <td><i class="fa fa-truck"></i></td>
+            <td>PR-010</td>
+            <td>
+              <p class="desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
+                excepturi exercitationem voluptatum quibusdam laudantium eveniet
+                dolorem fugiat ipsum vero sunt quo, esse ducimus, animi
+                blanditiis incidunt soluta tempora quod sapiente?
+              </p>
+            </td>
+            <td>HP</td>
+            <td>
+              <div class="toggle">
+                <input
+                  type="checkbox"
+                  name="client6"
+                  id="toggle__client--sixth"
+                  class="toggle__input"
+                />
+                <label
+                  for="toggle__client--sixth"
+                  class="toggle__label"
+                ></label>
+              </div>
+            </td>
+            <td>
+              <div class="toggle">
+                <input
+                  type="checkbox"
+                  name="active6"
+                  id="toggle__active--sixth"
+                  class="toggle__input"
+                />
+                <label
+                  for="toggle__active--sixth"
+                  class="toggle__label"
+                ></label>
+              </div>
+            </td>
+            <td><span class="status status--active">Active</span></td>
+            <td>
+              <div class="action">
+                <t class="fa fa-edit action__icon"></t>
+                <t class="fa fa-circle action__icon"></t>
+                <t class="fa fa-trash action__icon"></t>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
