@@ -1,0 +1,96 @@
+$primary: #fc566f;
+$secondary: #fd9c84;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin flexbox($align: flex-start,
+  $justify: flex-start,
+  $flex-direction: row,
+  $wrap: nowrap) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $flex-direction;
+  flex-wrap: $wrap;
+}
+
+.file {
+  margin: 5rem auto;
+  @include size(10rem);
+  border-radius: 1rem;
+  border: solid 1px $primary;
+  background-color: rgba($secondary, 0.5);
+  position: relative;
+  color: white;
+
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    @include flexbox(center, center);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    z-index: 2;
+  }
+}

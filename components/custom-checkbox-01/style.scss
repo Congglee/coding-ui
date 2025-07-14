@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin flexbox($align: flex-start,
+  $justify: flex-start,
+  $flex-direction: row,
+  $wrap: nowrap) {
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $flex-direction;
+  flex-wrap: $wrap;
+}
+
+.checkbox {
+  margin: 100px;
+
+  &__input {
+    display: none;
+
+    &:checked+.checkbox__label::after {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 50px;
+
+    &::before {
+      content: "";
+      @include size(40px);
+      background-color: #ffc56f;
+      border-radius: 10px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &::after {
+      content: "";
+      @include size(20px, 10px);
+      position: absolute;
+      left: 10px;
+      top: 0;
+      transform: rotate(-45deg);
+      border-bottom: solid 3px #fff;
+      border-left: solid 3px #fff;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.25s linear;
+    }
+  }
+}

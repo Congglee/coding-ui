@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  padding: 3rem;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.input-style {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 8px;
+  color: #333;
+  border: solid 1px #c0c1c7;
+  transition: all 0.25s linear;
+  resize: none;
+}
+.input-style::-webkit-input-placeholder {
+  color: #c0c1c7;
+}
+.input-style:focus {
+  box-shadow: 0 0 0 4px #ffdcdc;
+  border-color: #e5544a;
+}
+
+.button-style {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  border: 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.8rem;
+  cursor: pointer;
+  background-color: #e55371;
+  box-shadow: 0 5px 0 0 #92172e;
+  transition: all 0.25s linear;
+}
+.button-style:hover {
+  background-color: #e5c4c3;
+  color: #e55371;
+}
+.button-style:active {
+  box-shadow: 0 2px 0 0 #92172e;
+  transform: translateY(3px);
+}
+
+/*# sourceMappingURL=style.css.map */

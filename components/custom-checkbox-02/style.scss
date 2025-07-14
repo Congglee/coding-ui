@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.custom-checkbox-input {
+  display: none;
+}
+
+.custom-check-label {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.custom-checkbox-box {
+  width: 40px;
+  height: 40px;
+  border: solid 1px #eee;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  margin: 25px auto;
+  width: max-content;
+}
+
+.custom-checkbox-input:checked+.custom-checkbox-box {
+  background-color: #000;
+}
+
+.custom-checkbox-input:checked+.custom-checkbox-box>.custom-checkbox-icon {
+  color: #ff7870;
+}

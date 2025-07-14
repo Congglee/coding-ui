@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+.checkbox2 {
+  margin: 5rem;
+
+  &__input {
+    display: none;
+
+    &:checked+.checkbox2__label {
+      background-color: #6a55e5;
+
+      .checkbox2__spin {
+        transform: translateX(50px);
+      }
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    @include size(10rem, 5rem);
+    background-color: #ccc;
+    border-radius: 5rem;
+    cursor: pointer;
+    padding: 5px;
+    transition: 0.25s linear;
+  }
+
+  &__spin {
+    @include size(4rem);
+    background-color: white;
+    border-radius: 4rem;
+    transition: 0.25s linear;
+  }
+}

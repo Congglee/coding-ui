@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: "DM Sans", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin flexbox($align: flex-start,
+  $justify: flex-start,
+  $flex-direction: row,
+  $wrap: nowrap) {
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $flex-direction;
+  flex-wrap: $wrap;
+}
+
+.radio {
+  margin: 100px;
+
+  &__input {
+    display: none;
+
+    &:checked+.radio__label::before {
+      background-color: #fc566f;
+      box-shadow: 0 0 0 4px #fff, 0 0 0 6px #fc566f;
+    }
+  }
+
+  &__label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 5rem;
+
+    &::before {
+      content: "";
+      @include size(2.5rem);
+      border-radius: 3rem;
+      background-color: #eee;
+      box-shadow: 0 0 0 4px #eee, 0 0 0 6px #b1c1b1cb;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: 0.25s ease;
+    }
+  }
+}
+
+.radio2 {
+  margin: 100px;
+
+  &__input {
+    display: none;
+
+    &:checked+.radio2__label {
+      background-color: #fc566f;
+    }
+  }
+
+  &__label {
+    position: relative;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 20px;
+    display: inline-block;
+    transition: all 0.2s linear;
+    background-color: #eee;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.radio3 {
+  margin: 100px;
+
+  &__input {
+    display: none;
+
+    &:checked+.radio3__label {
+      background-color: #fc566f;
+    }
+  }
+
+  &__label {
+    position: relative;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 20px;
+    display: inline-block;
+    transition: all 0.2s linear;
+    background-color: #eee;
+    font-size: 20px;
+    text-align: center;
+  }
+}
