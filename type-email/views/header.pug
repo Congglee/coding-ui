@@ -1,0 +1,25 @@
+header.header
+  .container
+    .header-top
+      a.header-logo(href="./index.html")
+        img(src="./images/logo.svg", alt="logo")
+        span.header-logo-text Type Email
+      ul.menu 
+        each val in [{href: "./index.html", title: "Home"}, {href:"#", title:"Pricing"}, {href:"#", title:"Resources"}, {href:"#", title:"Support"}]
+          li.menu-item
+            a.menu-link(href=val.href)= val.title
+      a.header-login(href="#") Login
+      span.menu-toggle 
+        svg(width='13' height='12' viewbox='0 0 13 12' fill='none' xmlns='http://www.w3.org/2000/svg') 
+          rect(width='13' height='2' fill='#82E263')
+          rect(y='5' width='13' height='2' fill='#82E263')
+          rect(y='10' width='13' height='2' fill='#82E263')
+    .header-content
+      h1.header-heading.text-primary  Online shoppers into loyal, lifetime customers with email & sms marketing
+      .header-buttons
+        a.header-started.button.button--primary(href="#") Get Started
+        a.header-works(href="#")
+          span How it works
+          img(src="./images/icon-play.svg", alt="play") 
+    .header-image
+      img(srcSet="./images/image-1.png 2x", alt="header image")
