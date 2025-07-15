@@ -6,12 +6,13 @@ A curated collection of modern, responsive landing pages and UI components, buil
 
 ## 🌟 Featured Projects
 
-| Project       | Description                   | Tech Stack          | Live Demo                                      |
-| ------------- | ----------------------------- | ------------------- | ---------------------------------------------- |
-| **Gocast**    | Podcast platform landing page | HTML, SCSS, Pug     | [Demo](https://gocast-olive.vercel.app)        |
-| **LaslesVPN** | VPN service landing page      | HTML, SCSS, JS      | [Demo](https://lasles-vpn-xi-eight.vercel.app) |
-| **Omnifood**  | Food delivery service website | HTML, CSS, JS       | [Demo](https://omnifood-lovat-one.vercel.app)  |
-| **Pollock**   | Creative agency landing page  | HTML, SCSS, Pug, JS | [Demo](https://pollock-xi.vercel.app)          |
+| Project        | Description                   | Tech Stack          | Live Demo                                      |
+| -------------- | ----------------------------- | ------------------- | ---------------------------------------------- |
+| **Gocast**     | Podcast platform landing page | HTML, SCSS, Pug     | [Demo](https://gocast-olive.vercel.app)        |
+| **LaslesVPN**  | VPN service landing page      | HTML, SCSS, JS      | [Demo](https://lasles-vpn-xi-eight.vercel.app) |
+| **Omnifood**   | Food delivery service website | HTML, CSS, JS       | [Demo](https://omnifood-lovat-one.vercel.app)  |
+| **Pollock**    | Creative agency landing page  | HTML, SCSS, Pug, JS | [Demo](https://pollock-xi.vercel.app)          |
+| **Type Email** | Email service landing page    | HTML, SCSS, Pug, JS | [Demo](https://type-email-gamma.vercel.app)    |
 
 ---
 
@@ -33,6 +34,7 @@ A curated collection of modern, responsive landing pages and UI components, buil
 - `lasles-vpn/` – VPN landing page
 - `omnifood/` – Food delivery website
 - `pollock/` – Creative agency landing page
+- `type-email/` – Email service landing page
 - `components/` – Reusable UI components (checkboxes, dropdowns, etc.)
 - `flexbox-master/`, `grid-master/`, `animations-master/` – Layout & animation demos
 - `sample-ui/`, `tips-and-tricks/` – Mini UIs, CSS/HTML tips
