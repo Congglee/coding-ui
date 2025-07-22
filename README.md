@@ -21,6 +21,7 @@ A curated collection of modern, responsive landing pages and UI components, buil
 - **HTML5, CSS3, SCSS**
 - **JavaScript** (for interactivity)
 - **Pug** (template engine)
+- **Tailwind CSS** (utility-first CSS framework)
 - **Modern CSS**: Flexbox, Grid, Custom Properties, Animations, Media Queries
 - **Component-based architecture**
 - **Responsive design** (mobile-first)
@@ -37,6 +38,7 @@ A curated collection of modern, responsive landing pages and UI components, buil
 - `type-email/` – Email service landing page
 - `components/` – Reusable UI components (checkboxes, dropdowns, etc.)
 - `flexbox-master/`, `grid-master/`, `animations-master/` – Layout & animation demos
+- `tailwindcss-master/` – Tailwind CSS v3 & v4 demo projects (utility-first CSS, Vite setup)
 - `sample-ui/`, `tips-and-tricks/` – Mini UIs, CSS/HTML tips
 
 ---
