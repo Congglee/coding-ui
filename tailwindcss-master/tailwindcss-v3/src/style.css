@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-grayf6 font-primary dark:bg-[#1a1b1e] p-5;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply h-12 rounded-lg text-white font-semibold bg-primary text-sm py-3 px-5;
+  }
+
+  .card {
+    @apply p-5 bg-white rounded-lg flex gap-5 shadow-sm;
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
